@@ -22,5 +22,10 @@ namespace TiZip
         {
 
         }
+
+        private void 打开文件ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
