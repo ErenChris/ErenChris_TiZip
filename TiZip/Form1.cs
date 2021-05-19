@@ -14,7 +14,13 @@ namespace TiZip
     {
         public Form1()
         {
+            
             InitializeComponent();
+        }
+
+        private void 文件ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
