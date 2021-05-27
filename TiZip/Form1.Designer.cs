@@ -41,6 +41,8 @@ namespace TiZip
             this.panel2 = new System.Windows.Forms.Panel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.选项ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +50,8 @@ namespace TiZip
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.File});
+            this.File,
+            this.选项ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(459, 25);
@@ -59,7 +62,8 @@ namespace TiZip
             // 
             this.File.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.OpenFile,
-            this.Exit});
+            this.Exit,
+            this.toolStripMenuItem1});
             this.File.Name = "File";
             this.File.Size = new System.Drawing.Size(44, 21);
             this.File.Text = "文件";
@@ -68,14 +72,14 @@ namespace TiZip
             // OpenFile
             // 
             this.OpenFile.Name = "OpenFile";
-            this.OpenFile.Size = new System.Drawing.Size(124, 22);
+            this.OpenFile.Size = new System.Drawing.Size(180, 22);
             this.OpenFile.Text = "打开文件";
-            this.OpenFile.Click += new System.EventHandler(this.打开文件ToolStripMenuItem_Click);
+            this.OpenFile.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
             // Exit
             // 
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(124, 22);
+            this.Exit.Size = new System.Drawing.Size(192, 22);
             this.Exit.Text = "退出";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -93,22 +97,23 @@ namespace TiZip
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(45, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 12);
+            this.label2.Size = new System.Drawing.Size(83, 12);
             this.label2.TabIndex = 3;
-            this.label2.Text = "目标文件：";
+            this.label2.Text = "压缩/解压到：";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(130, 119);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 21);
+            this.textBox1.Size = new System.Drawing.Size(234, 21);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(130, 80);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(272, 21);
+            this.textBox2.Size = new System.Drawing.Size(234, 21);
             this.textBox2.TabIndex = 6;
             // 
             // StartButton
@@ -153,6 +158,18 @@ namespace TiZip
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // 选项ToolStripMenuItem
+            // 
+            this.选项ToolStripMenuItem.Name = "选项ToolStripMenuItem";
+            this.选项ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.选项ToolStripMenuItem.Text = "选项";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -168,6 +185,7 @@ namespace TiZip
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "TiZip";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -191,6 +209,8 @@ namespace TiZip
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 选项ToolStripMenuItem;
     }
 }
 
