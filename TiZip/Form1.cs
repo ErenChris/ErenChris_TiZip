@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.ImageList;
 
 namespace TiZip
 {
@@ -16,6 +17,8 @@ namespace TiZip
         {
             
             InitializeComponent();
+            this.toolStrip1.ImageList = this.imageList1;
+            this.toolStripDownButton.ImageIndex = 0;
         }
 
         private void 文件ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -62,5 +65,11 @@ namespace TiZip
         {
 
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
