@@ -19,6 +19,7 @@ namespace TiZip
             InitializeComponent();
             this.toolStrip1.ImageList = this.imageList1;
             this.toolStripDownButton.ImageIndex = 0;
+            this.toolStripUpButton.ImageIndex = 1;
         }
 
         private void 文件ToolStripMenuItem_Click(object sender, EventArgs e)
