@@ -42,7 +42,8 @@ namespace TiZip
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripDownButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripUpButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripCopyButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripMoveButton = new System.Windows.Forms.ToolStripButton();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -133,7 +134,8 @@ namespace TiZip
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDownButton,
             this.toolStripUpButton,
-            this.toolStripButton3});
+            this.toolStripCopyButton,
+            this.toolStripMoveButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 25);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 75);
@@ -164,15 +166,29 @@ namespace TiZip
             this.toolStripUpButton.Text = "提取";
             this.toolStripUpButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // toolStripButton3
+            // toolStripCopyButton
             // 
-            this.toolStripButton3.AutoSize = false;
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 72);
-            this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripCopyButton.AutoSize = false;
+            this.toolStripCopyButton.Font = new System.Drawing.Font("微软雅黑 Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripCopyButton.Image = ((System.Drawing.Image)(resources.GetObject("toolStripCopyButton.Image")));
+            this.toolStripCopyButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripCopyButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripCopyButton.Name = "toolStripCopyButton";
+            this.toolStripCopyButton.Size = new System.Drawing.Size(74, 74);
+            this.toolStripCopyButton.Text = "复制";
+            this.toolStripCopyButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripMoveButton
+            // 
+            this.toolStripMoveButton.AutoSize = false;
+            this.toolStripMoveButton.Font = new System.Drawing.Font("微软雅黑 Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripMoveButton.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMoveButton.Image")));
+            this.toolStripMoveButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMoveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripMoveButton.Name = "toolStripMoveButton";
+            this.toolStripMoveButton.Size = new System.Drawing.Size(74, 74);
+            this.toolStripMoveButton.Text = "移动";
+            this.toolStripMoveButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // imageList1
             // 
@@ -239,9 +255,10 @@ namespace TiZip
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ToolStripButton toolStripDownButton;
         private System.Windows.Forms.ToolStripButton toolStripUpButton;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 文件ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripCopyButton;
+        private System.Windows.Forms.ToolStripButton toolStripMoveButton;
     }
 }
 
