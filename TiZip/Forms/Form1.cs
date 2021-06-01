@@ -11,12 +11,12 @@ using static System.Windows.Forms.ImageList;
 
 namespace TiZip
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
-        public Form1()
+        public MainWindow()
         {
-            
             InitializeComponent();
+            //this.FormBorderStyle = FormBorderStyle.None;
             this.toolStrip1.ImageList = this.imageList1;
             this.toolStripDownButton.ImageIndex = 0;
             this.toolStripUpButton.ImageIndex = 1;
